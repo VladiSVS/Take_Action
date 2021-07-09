@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'Santio';
+    src: url(../fonts/SANTIO/TTF/Santio/Black.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto_Light';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Mr_Dafoe';
+    src: url(../fonts/Mr_Dafoe/MrDafoe-Regular.ttf)
+}
+
+/* Farbe: #e7bc0e  / #efefef / #6bc1a3 / #cb91b6 / #7eb8e1 / #000 / #fff */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("../image/cleo-topper.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Santio', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: -3px;
+}
+
+h2 {
+    font-size: 11em;
+    letter-spacing: -10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 3em;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 6em;
+    letter-spacing: -3px;
+}
+
+p {
+    font-size: 2.2em;
+    line-height: 2em;
+    letter-spacing: -2px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+}
+
+span {
+    color: #fff;
+    background: #29272A;
+    padding: 0% 1% 1% 0.5%;
+}
+
+/* header */
+
+header{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
+header > section > a:first-child {
+    position: absolute;
+    font-family: 'Santio', sans-serif; 
+    font-weight: 600;
+    top: 3%;
+    right: 7%;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #e7bc0e;
+    color: #fff;
+}
+
+header > section > a:first-child::before {
+    position: absolute;
+    content: url(../image/heart.svg);
+    width: 25px;
+    top: -35%;
+    right: 120%;
+}
+
+header > section > h1 {
+    width: 35%;
+    margin: 10% 0 5% 0;
+    color: #fff;
+}
+
+header > section > a:last-child {
+    font-family: 'Santio', cursive;
+    font-style: italic;
+    color: #e7bc0e;
+    font-size: 3em;
+    letter-spacing: -5px;
+}
+
+header > section > a:last-child > span {
+    margin-left: 10px;
+    color: #e7bc0e;
+    background: none; 
+}
+
+/* section about */
+
+#about {
+    padding: 10%;
+}
+
+#about > p {
+    color: #6bc1a3;
+}
+
+#about > p > span {
+    color: #fff;
+}
+
+/* section tabs */
+
+#tabs {
+    padding: 10%;
+}
+
+#tabs > article {
+    margin-bottom: 20%;
+}
+
+.svg {
+    width: 15%;
+    margin-bottom: 5%;
+}
+.num1 {
+    content: url("../image/stat-workers-color.svg");
+}
+#tabs > article > h2 {
+    color: #e7bc0e;
+} 
+
+#tabs > article > h3 {
+    color: #e7bc0e;
+} 
+
+.num2 {
+    content: url("../image/stat-pay-color.svg");
+}
+
+#tabs > article:nth-child(2) > h2 {
+    color: #cb91b6;
+} 
+#tabs > article:nth-child(2) > h3 {
+    color: #cb91b6;
+} 
+
+.num3 {
+    content: url("../image/stat-health-color.svg");
+}
+
+#tabs > article:nth-child(3) > h2 {
+    color: #6bc1a3;
+} 
+#tabs > article:nth-child(3) > h3 {
+    color: #6bc1a3;
+} 
+
+/* section info */
+
+#info {
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#info p{
+    color: #7eb8e1; 
+}
+
+/* section foto */
+.kids {
+    height: 100vh;
+}
+
+.kids > div:first-child{
+    position: absolute;
+    background: url(../image/see.png) center/cover no-repeat;
+    width: 100%; 
+    height: 100%;
+}
+
+.kids > div:last-child {
+    position: absolute;
+    background: url(../image/kid.png) center/cover no-repeat;
+    width: 100%; 
+    height: 100%;
+}
+
+/* section donate */
+
+#donate {
+    background: #000;
+    padding-bottom: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20%;
+}
+
+#donate > article {
+    padding-left: 5%;
+    padding-right: 5;
+}
+
+#donate > article > h4 {
+    color: #fff;
+    margin-bottom: 10%;
+}
+
+#donate > article > a {
+    font-family: 'Santio', sans-serif;
+    font-size: 2em;
+    padding: 2% 6%;
+    color: #fff;
+    background-color: #000;
+    border: 3px solid #fff;
+}
+
+#donate > article > a:hover {
+    box-shadow:  10px 10px 0 0 #fff;
+}
+
+/* footer */
+
+footer {
+    background: #000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+footer > p {
+    font-family: 'Roboto_Light', sans-serif; ;
+    font-size: 0.8em;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+footer > p > span {
+    padding: 0;
+    background: none;
+    color: #6bc1a3;
+}
