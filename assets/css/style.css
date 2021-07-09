@@ -148,7 +148,7 @@ header > section > a:last-child > span {
     padding: 10%;
 }
 
-#tabs > article {
+#tabs > article:not(article:last-child) {
     margin-bottom: 20%;
 }
 
@@ -169,6 +169,7 @@ header > section > a:last-child > span {
 
 .num2 {
     content: url("../image/stat-pay-color.svg");
+    margin-bottom: 7.5%;
 }
 
 #tabs > article:nth-child(2) > h2 {
@@ -192,9 +193,7 @@ header > section > a:last-child > span {
 /* section info */
 
 #info {
-    padding-bottom: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 10%;
 }
 
 #info p{
